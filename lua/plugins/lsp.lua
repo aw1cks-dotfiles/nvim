@@ -8,6 +8,13 @@ return {
   { import = "lazyvim.plugins.extras.lang.terraform" },
   { import = "lazyvim.plugins.extras.lang.yaml" },
 
+  {
+    "neovim/nvim-lspconfig",
+    opts = function(_, opts)
+      opts.autoformat = false
+    end,
+  },
+
   --[[
   {
     "williamboman/mason.nvim",
@@ -21,4 +28,5 @@ return {
     },
   },
   --]]
+
 }
