@@ -10,23 +10,9 @@ return {
 
   {
     "neovim/nvim-lspconfig",
-    opts = function(_, opts)
-      opts.autoformat = false
-    end,
-  },
-
-  --[[
-  {
-    "williamboman/mason.nvim",
     opts = {
-      ensure_installed = {
-        "stylua",
-        "shellcheck",
-        "shfmt",
-        "flake8",
-      },
+      autoformat = false,
     },
   },
-  --]]
 
 }
