@@ -3,6 +3,10 @@ local Util = require("lazyvim.util")
 return {
 
   {
+    "sindrets/diffview.nvim",
+  },
+
+  {
     "lewis6991/gitsigns.nvim",
     keys = {
       {
