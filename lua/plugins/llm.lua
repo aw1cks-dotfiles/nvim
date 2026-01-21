@@ -1,16 +1,9 @@
 return {
   {
-    "greggh/claude-code.nvim",
+    "olimorris/codecompanion.nvim",
     dependencies = {
-      "nvim-lua/plenary.nvim", -- Required for git operations
+      "nvim-lua/plenary.nvim",
     },
-    config = function()
-      require("claude-code").setup({
-        command = "claude.sh",
-        window = {
-          split_ratio = 0.45,
-        }
-      })
-    end,
+    opts = {},
   },
 }
